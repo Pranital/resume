@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './app/app.component.scss';
+@import './app/pages/home/home.component.scss';
+@import './app/pages/about/about.component.scss';
+@import './app/pages/services/services.component.scss';
+@import './app/pages/contact/contact.component.scss';
+@import './app/pages/resume/resume.component.scss';
+
+body{
+    background: #151515;
+    font-family: "lora-regular", serif;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: #6e6e6e;
+}
+
+input, textarea, select, pre, blockquote, figure, table, p, ul, ol, dl, form, .fluid-video-wrapper, .ss-custom-select {
+    margin-bottom: 3rem;
+}
+
+h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
+    font-family: "poppins-semibold", sans-serif;
+    color: #313131;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 2.1rem;
+}
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+    max-height: 6rem;
+    height: 1rem;
+    padding: 1.5rem 0;
+    border: 0;
+    outline: none;
+    vertical-align: middle;
+    color: #313131;
+    font-family: "poppins-regular", sans-serif;
+    font-size: 1rem;
+    max-width: 100%;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 100%;
+}

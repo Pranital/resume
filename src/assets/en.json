@@ -1,0 +1,10 @@
+{
+    "homeComponent" : {
+        "link1" : "Home",
+        "link2" : "about",
+        "link3" : "resume",
+        "link4" : "portfolio",
+        "link5" : "services",
+        "link6" : "contact"
+    }
+}

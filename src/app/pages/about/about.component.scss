@@ -1,0 +1,233 @@
+@import '../../../variable.scss';
+
+app-about{
+    #about{
+        background: #FFFFFF;
+        padding-top: 12rem !important;
+        padding-bottom: 15rem;
+
+        .section-intro {
+            margin-bottom: 3rem;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-bottom: 3.6rem;
+            padding: 0 6rem;
+            font-family: "poppins-semibold", serif;
+            font-size: 3.6rem;
+            color: #313131;
+            line-height: 1.25;
+            margin-bottom: 1.2rem;
+            h5{
+                color: #FF0077;
+                font-size: 1.6rem;
+                line-height: 1.875;
+                margin-bottom: 0.3rem;
+                letter-spacing: .4rem;
+            }
+
+            h1 {
+                font-family: "poppins-semibold", serif;
+                font-size: 3.6rem;
+                color: #313131;
+                line-height: 1.25;
+                margin-bottom: 1.2rem;
+                             
+            }
+            .intro-info {
+                margin-top: 4.2rem;
+                margin-right: -30px;
+                margin-left: -30px;
+            }
+        }
+
+        .about-content{
+            display: inline-block;
+            padding: 0 6rem;
+
+            h3 {
+                font-family: "poppins-bold", sans-serif;
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                letter-spacing: .25rem;
+                color: $black;
+            }
+
+            .info-list {
+                list-style: none;
+                margin-left: 0;
+
+                li {
+                    padding: 0 0 1.5rem 0;
+                    margin-bottom: .6rem;
+                }
+
+                strong {
+                    font-family: "poppins-bold", sans-serif;
+                    color: #313131;
+                    text-transform: uppercase;
+                    letter-spacing: .2rem;
+                    font-size: 1.5rem;
+                    line-height: 3rem;
+                }
+
+                span {
+                    display: block;
+                    font-family: "poppins-regular", sans-serif;
+                    color: #888888;
+                    font-size: 1.5rem;
+                    line-height: 1;
+                }
+            }
+
+            .skill-bars {
+                margin-top: 6rem;
+
+                li {
+                    height: .6rem;
+                    background: #ffffff;
+                    width: 100%;
+                    margin-bottom: 6rem;
+                    padding: 0;
+                    position: relative;
+
+                    .percent90 {
+                        width: 90%;
+                    }
+
+                    strong {
+                        position: absolute;
+                        left: 0;
+                        top: -3rem;
+                        font-family: "poppins-bold", sans-serif;
+                        color: #313131;
+                        text-transform: uppercase;
+                        letter-spacing: .2rem;
+                        font-size: 1.5rem;
+                        line-height: 2.4rem;
+                    }
+
+                    .percent85 {
+                        width: 85%;
+                    }
+                    .percent70 {
+                        width: 70%;
+                    }
+                    .percent95 {
+                        width: 95%;
+                    }
+                    .percent75 {
+                        width: 75%;
+                    }
+                    .progress {
+                        background: #313131;
+                        height: 100%;
+                        span {
+                            position: absolute;
+                            right: 0;
+                            top: -3.6rem;
+                            display: block;
+                            font-family: "poppins-regular", sans-serif;
+                            color: white;
+                            font-size: 1.1rem;
+                            line-height: 1;
+                            background: #313131;
+                            padding: .6rem .6rem;
+                            border-radius: 3px;
+
+                            &::after {
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: -5px;
+                                    margin-left: -5px;
+                                    border-right: 5px solid transparent;
+                                    border-left: 5px solid transparent;
+                                    border-top: 5px solid #313131;
+                                    content: "";
+                                }
+                            }
+                    }
+                }
+            }
+        }
+
+        .button-section {
+            text-align: center;
+
+            &:first-child {
+                margin-right: 4rem;
+            }
+
+            .btn{
+                width: 19rem;
+                display: inline-block;
+                font-family: "poppins-bold", sans-serif;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                letter-spacing: .3rem;
+                height: 5.4rem;
+                line-height: 5.4rem;
+                padding: 0 3rem;
+                margin: 0 .3rem 1.2rem 0;
+                background: #d8d8d8;
+                color: #313131;
+                text-decoration: none;
+                cursor: pointer;
+                text-align: center;
+                white-space: nowrap;
+                border: none;
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                &.stroke{
+                    background: transparent !important;
+                    border: 3px solid #313131;
+                    line-height: 4.8rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px)
+{
+    .col-twelve{
+        padding: 0 15px;
+    }
+
+    #about{
+        padding-top: 10rem !important;
+        .section-intro {
+            padding: 0 10px;
+
+            .intro-info{
+                margin-top: 0.2rem;
+            }
+            h1{
+                font-size: 3rem;
+            }
+
+            h5{
+                font-size: 2rem;
+            }
+        }
+
+        .about-content{
+            padding: 0 10px;
+
+            .info-list{
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .col-twelve{
+        padding: 0 15px;
+    }
+}

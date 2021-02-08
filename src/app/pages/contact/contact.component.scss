@@ -1,0 +1,127 @@
+app-contact{
+    #contact{
+        background: #151515;
+        padding-top: 12rem;
+        padding-bottom: 7.2rem;
+
+        .section-intro {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-bottom: 3.6rem;
+
+            h5 {
+                color: #FF0077;
+            }
+
+            h1 {
+                font-family: "poppins-bold", serif;
+                font-size: 2.6rem;
+                color: #ffffff;
+                line-height: 1.25;
+                margin-bottom: 1.2rem;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.7);
+                font-family: "lora-regular", serif;
+                font-size: 1.5rem;
+                line-height: 1.8;
+            }
+        }
+
+        form {
+            margin-top: 0;
+            margin-bottom: 3rem;
+
+            .form-field label {
+                font-family: "poppins-bold", sans-serif;
+                font-size: 1.1rem;
+                line-height: 2.4rem;
+                position: absolute;
+                bottom: -1.2rem;
+                right: .6rem;
+                text-transform: uppercase;
+                letter-spacing: .1rem;
+                padding: 0 2rem;
+                margin: 0;
+                color: #FFFFFF;
+                background: #FF0077;
+
+                &::after {
+                    position: absolute;
+                    left: -5px;
+                    top: 50%;
+                    margin-top: -6px;
+                    border-top: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+                    border-right: 5px solid #FF0077;
+                    content: "";
+                }
+            }
+        }
+
+        .contact-form {
+            max-width: 740px;
+            margin: 0 auto;
+
+            fieldset {
+                border: none;
+                position: relative;
+            }
+
+        }
+
+        .contact-info {
+            margin: 4.8rem auto 0;
+            font-family: "poppins-regular", sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+
+            .icon {
+                margin-bottom: 2.1rem;
+
+                i {
+                    font-size: 2.2rem;
+                    color: #FFFFFF;
+                }
+            }
+
+            h5 {
+                color: #FF0077;
+            }
+
+            & > div > p{
+                overflow-wrap: break-word;
+                font-size: 1.1rem;
+                line-height: 2.1rem;
+            }
+        }
+
+        button.submitform {
+            font-size: 1.1rem;
+            display: block;
+            letter-spacing: .2rem;
+            height: 3.6rem;
+            line-height: 3.6rem;
+            padding: 0 1rem;
+            margin-top: 2.8rem;
+            width: 100%;
+            background: #FF0077;
+            color: #FFFFFF;
+            font-family: "poppins-bold", sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+            white-space: nowrap;
+            border: none;
+            moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
