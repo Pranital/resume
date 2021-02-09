@@ -1,3 +1,5 @@
+@import '../../../variable.scss';
+
 app-contact{
     #contact{
         background: #151515;
@@ -33,7 +35,16 @@ app-contact{
         form {
             margin-top: 0;
             margin-bottom: 3rem;
-
+            max-width: 700px;
+            margin: 0 auto;
+            .invalid-feedback{
+                color: $pink;
+            }
+            .form-control.is-invalid, .was-validated .form-control:invalid {
+                margin-bottom: 0;
+                border-color: $pink;
+                // background-image: url();
+            }
             .form-field label {
                 font-family: "poppins-bold", sans-serif;
                 font-size: 1.1rem;
@@ -59,17 +70,6 @@ app-contact{
                     content: "";
                 }
             }
-        }
-
-        .contact-form {
-            max-width: 740px;
-            margin: 0 auto;
-
-            fieldset {
-                border: none;
-                position: relative;
-            }
-
         }
 
         .contact-info {

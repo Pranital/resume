@@ -8,7 +8,7 @@
 
             <div class="intro-info">
 
-                <img src="images/profile-pic.jpg" alt="Profile Picture">
+                <img src="/assets/Pranita_image.jpg" alt="Profile Picture" class="col-3 img-fluid rounded-circle">
 
                 <p class="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
             </div>   			
@@ -85,8 +85,9 @@
 
     <div class="col-12 p-0 button-section">
         <div class="col-12">
-            <a title="Hire Me" class="btn stroke smoothscroll">Hire Me</a>
-            <a title="Download CV" class="btn btn-dark">Download CV</a>
+            <a title="Hire Me" [routerLink]="'/experience'" class="btn stroke smoothscroll">Experience</a>
+            <a title="Download CV" (click)="downloadFile()" target="_blank"
+            rel="noopener noreferrer" class="btn btn-dark">Download CV</a>
         </div>   		
     </div>
 

@@ -9,6 +9,9 @@ import { ResumeComponent } from './pages/resume/resume.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { ContactComponent } from './pages/contact/contact.component';
     ResumeComponent,
     PortfolioComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

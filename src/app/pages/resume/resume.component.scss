@@ -2,10 +2,12 @@
 @import '../../../variable.scss';
 
 
-app-resume{
+app-resume, app-education{
+    display: inline-block;
+    background: #ebebeb;
+
     #resume {
-        padding-top: 12rem;
-        padding-bottom: 12rem;
+        padding-top: 10rem;
 
         &.grey-section {
             background: #ebebeb;
@@ -23,6 +25,7 @@ app-resume{
                 line-height: 1.875;
                 margin-bottom: 0.3rem;
                 letter-spacing: .4rem;
+                font-family: "poppins-bold", serif;
             }
 
             h1 {
@@ -79,6 +82,7 @@ app-resume{
                         float: left;
                         width: 35%;
                         padding-right: 90px;
+                        padding-top: 2rem;
                         text-align: right;
 
                         h3 {
@@ -95,11 +99,11 @@ app-resume{
                     .timeline-content {
                         margin-left: 35%;
                         padding-left: 60px;
-                        border-left: 1px solid;
+                        border-left: 1px solid rgba(0, 0, 0, 0.2);
                         h4 {
                             position: relative;
-                            padding-bottom: 0.8rem;
-                            padding-top: 34px;
+                            padding-bottom: 1.5rem;
+                            padding-top: 1.5rem;
 
                             &::after {
                                 content: "";
@@ -127,8 +131,12 @@ app-resume{
 
 @media screen and (max-width: 768px)
 {
-    app-resume{
+    app-resume, app-education{
         #resume{
+            padding-top: 12rem;
+            .section-intro h1 {
+                font-size: 3rem;
+            }
             .resume-timeline .timeline-wrap .timeline-block {
                 .timeline-content {
                     margin-left: 8%;

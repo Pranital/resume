@@ -43,7 +43,7 @@ app-home{
             h1{
                 color: #FFFFFF;
                 font-family: "poppins-medium", sans-serif;
-                font-size: 5.4rem;
+                font-size: 8.4rem;
                 line-height: 1.071;
                 max-width: 900px;
                 margin-top: 0;
@@ -55,7 +55,7 @@ app-home{
 
             .intro-position {
                 font-family: "poppins-bold", sans-serif;
-                font-size: 1rem;
+                font-size: 1.3rem;
                 line-height: 2.4rem;
                 text-transform: uppercase;
                 letter-spacing: .2rem;
@@ -86,9 +86,9 @@ app-home{
             a.button {
                 color: #FFFFFF !important;
                 border-color: rgba(255, 255, 255, 0.3);
-                line-height: 3.4rem !important;
+                line-height: 5.4rem !important;
                 padding: 0 3.5rem 0 3rem !important;
-                font-size: 1rem;
+                font-size: 1.3rem;
                 letter-spacing: .25rem;
                 display: inline-block;
                 font-family: "poppins-bold", sans-serif;
@@ -106,8 +106,23 @@ app-home{
                 background: transparent !important;
                 border: 3px solid #313131;
 
-                &:focus{
+                &:focus, &:hover{
                     border-color: $pink;
+                }
+
+                & + div{
+                    color: #FFFFFF !important;
+                    transition: all 0.3s ease-in-out;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    
+                    span{
+                    display: inline-block;
+
+                    &::before{
+                        color: $pink;
+                    }
+                }
                 }
             }
         }
@@ -117,6 +132,7 @@ app-home{
             padding: 0;
             position: absolute;
             bottom: 20px;
+            font-size: 3rem;
             li{
                 display: inline-block;
                 margin: 0 20px;
@@ -139,12 +155,21 @@ app-home{
                     font-size: 1.8rem;
                 }
                 h1 {
-                    font-size: 3.2rem;
+                    font-size: 5.2rem;
                 }
                 .intro-position {
-                    font-size: .7rem;
+                    font-size: 1.1rem;
                 }
             }
+            .intro-social {
+                font-size: 2.5rem;
+            }
         }        
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .intro-content h1 {
+        font-size: 7.6rem;
     }
 }

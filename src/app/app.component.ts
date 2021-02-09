@@ -12,10 +12,9 @@ export class AppComponent {
   links = [
     'home',
     'about',
-    'resume',
-    'portfolio',
-    'services',
-    'contact'
+    'experience',
+    'education',
+    'contact',
   ];
 
   constructor(){

@@ -2,12 +2,17 @@
 
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'fonts.scss';
 @import './app/app.component.scss';
 @import './app/pages/home/home.component.scss';
 @import './app/pages/about/about.component.scss';
 @import './app/pages/services/services.component.scss';
 @import './app/pages/contact/contact.component.scss';
 @import './app/pages/resume/resume.component.scss';
+
+html {
+    font-size: 10px;
+}
 
 body{
     background: #151515;
@@ -50,3 +55,16 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     width: 100%;
     max-width: 100%;
 }
+
+@media only screen and (max-width: 768px)  {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 9.411764705882353px;
+    }
+}
+

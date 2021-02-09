@@ -38,6 +38,13 @@ app-about{
                 margin-top: 4.2rem;
                 margin-right: -30px;
                 margin-left: -30px;
+
+                p.lead {
+                    font-family: "lora-regular", serif;
+                    font-size: 2rem;
+                    line-height: 1.8;
+                    color: #888888;
+                }
             }
         }
 
@@ -205,6 +212,9 @@ app-about{
 
             .intro-info{
                 margin-top: 0.2rem;
+                .lead {
+                    padding: 1rem 5rem;
+                }
             }
             h1{
                 font-size: 3rem;

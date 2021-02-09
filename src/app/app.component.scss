@@ -10,8 +10,16 @@ app-root{
         z-index: 1;
     }
     nav{
+        background-color: $black;
+
         .navbar-collapse > div.bg-dark{
             background-color: $black !important;
+
+            ul{
+                padding: 24px 30px 42px;
+                font-family: "poppins-medium", sans-serif;
+                font-size: 1.5rem;
+            }
         }
         li{
             a{
@@ -19,11 +27,9 @@ app-root{
             }
         }
         .nav-link {
-            padding: 0;
-            font-family: "poppins-bold", sans-serif;
-            font-size: 16px;
-            color: $black;
-
+            padding: 15px 0;
+            width: auto;
+            color: white !important;
             &.active{
                 color: $pink !important;
             }
@@ -32,6 +38,7 @@ app-root{
             float: left;
             width: 40px;
             height: 40px;
+            margin-left: 20px;
             margin-top: 13px;
             display: block;
             position: relative;
